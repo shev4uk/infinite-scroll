@@ -7,6 +7,7 @@ let page = 1;
 searchForm.addEventListener('submit', function(e) {
   e.preventDefault();
   infiniteScroll();
+  gallery.innerHTML = '';
 });
 
 async function getImages() {
